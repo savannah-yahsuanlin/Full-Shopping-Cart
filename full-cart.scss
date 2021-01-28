@@ -1,0 +1,278 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+$stat-teal: #1fadb6;
+$teal-dark: #1c9ba3;
+
+body {
+    font-family: "Circular", sans-serif;
+    margin: 20px auto;
+    line-height: 1.4;
+    box-sizing: border-box;
+}
+@media (min-width: 400px) {
+  body { 
+        width: 100%; 
+        font-size: 100%; 
+    }
+}
+@media (min-width: 700px) {
+  body {
+        width: 100%; 
+        font-size: 90%; 
+    }
+}
+@media (min-width: 850px) {
+  body { 
+       
+        font-size: 100%; 
+    }
+}
+@media (min-width: 1000px) {
+  body { 
+        
+        font-size: 110%;
+    }
+}
+@media (min-width: 1100px) {
+  body { 
+       
+        font-size: 115%;
+    }
+}
+@media (min-width: 1450px) {
+  body { 
+        
+        font-size: 125%; 
+    }
+}
+
+.shopping-cart {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    letter-spacing: 1.5px;
+}
+
+.cart-left {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-items: center;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 7px 0;
+}
+
+.item-left {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+
+.item-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-title {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.item-license {
+    margin: 0;
+    padding: 0;
+}
+
+.item-content {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.input-group {
+    display: flex;
+}
+
+input[type="button"], .cart-quantity {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border: none;
+}
+
+.item-remove a{
+    text-decoration: none;
+    color: #1c1c1c;
+    font-size: 89%;
+}
+
+.item-price {
+    margin: 0;
+    color: $stat-teal;
+}
+
+
+.cart-totals {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.cart-value {
+    margin-top: 0;
+
+}
+
+ul li.cart-total:last-child{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 7px;
+    font-size: 110%;
+    color: $stat-teal;
+    font-weight: bold;
+}
+
+.checkout {
+    border: none;
+    background-color: $stat-teal;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.supported-payment-ways {
+    margin: 20px;
+    font-size: 70%;
+    text-align: center;
+
+    p.title {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #aaa;
+    }
+}
+
+.payments {
+    list-style-type: none;
+    display: flex;
+    font-size: 180%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+
+    li {
+        margin-right: 10px;
+    }
+}
+
+
+.ipad {
+    display: none;
+}
+
+@media (min-width: 768px){
+    .cart-right {
+        display: none;
+    }
+
+  
+    .shopping-cart {
+        width: 66.6666%;
+    }
+
+    .ipad {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        margin: 20px;
+        padding: 20px;
+        margin-left: auto;
+    }
+
+    .format-middle-size-shopping-cart {
+        display: flex;
+       
+    }
+
+    .supported-payment-ways {
+        width: 33.33%;
+
+        .title {
+            text-align: left;
+        }
+    }
+    
+    .payments {
+        justify-content: unset;
+    }
+}
+
+@media (min-width: 1024px){
+    .shopping-cart{
+        padding: 0 48px 0 48px;
+    }
+    .supported-payment-ways {
+        margin-top: auto;
+    }
+
+    .item-right {
+        flex-direction: column;
+        margin-top: 0;
+    }  
+
+   .item-content {
+        width: 37%;
+    }
+}
+
+@media (min-width: 1200px){
+    .ipad { 
+        width: 33%;
+    }
+     .item-right {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 3.5%;
+    }
+
+    .item-title {
+        flex: 0;
+    }
+    .input-group {
+        padding: 1.555555%;
+    }
+
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+        margin: 0; 
+    }
+
+    .supported-payment-ways {
+        position: fixed;
+        bottom: 0;
+    }
+
+}
